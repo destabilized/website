@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;700&display=swap');
+
+:root{
+  --color-1: #000;
+  --text-color: #f0f0f0;
+  --accent-color: #111;
+  --accent-color-2: #222;
+  --accent-color-3: rgb(68, 68, 68);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12pt;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 200;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-1);
+  color: var(--text-color);
+  overflow: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.yap {
+  max-width: 750px;
+  margin-top: 7rem;
+}
+
+.yap h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.yap h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.yap p {
+  font-weight: 200;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.yap a{
+  color: var(--text-color);
+}
+
+.yap h6 {
+  font-size: 1.1rem;
+  font-weight: 100;
+  opacity: .9;
+  margin-bottom: 1rem;
+}
+
+.yap img, video {
+  max-width: 100%;   
+  height: auto;     
+  display: block;    
+  margin-bottom: 1.2rem; 
+  border-radius: 4px;  
+  object-fit: contain; 
+}
+
+.two-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.two-imgs img {
+  width: 100%;
+  height: 100%;        
+  object-fit: cover;   
+  border-radius: 4px;
+  display: block;
+}
+
+pre {
+  margin: 0;      
+  padding: 0;     
+  margin-bottom: 1rem;
+}
+
+.hljs {
+  padding: 0;     
+  margin: 0;     
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.buttons {
+  text-decoration: none;
+  background: var(--accent-color-2);
+  color: var(--text-color);
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background 0.3s;
+  width: 50%;
+}
+
+#solo-button {
+  width: 100%;
+}
+
+.buttons:hover {
+  background: var(--accent-color-3);
+}
+
+@media (max-width: 600px) {
+  .yap {
+    max-width: 450px;
+  }
+}

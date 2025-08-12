@@ -427,7 +427,7 @@ section {
 }
 
 
-@media(max-width: 970px) {
+@media(max-width: 960px) {
   .branding {
     margin-left: 0;
   }
@@ -492,5 +492,10 @@ section {
 
   #skills-content {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-img img {
+    width: 300px;
+    height: 550px;
   }
 }

@@ -99,7 +99,7 @@ nav svg {
 section {
   background-color: var(--color-1);
   color: var(--text-color);
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 #skills_and_technologies {

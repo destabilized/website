@@ -428,6 +428,10 @@ section {
 
 
 @media(max-width: 970px) {
+  .branding {
+    margin-left: 0;
+  }
+
   .navbar {
     flex-direction: column;
     justify-content: flex-start;

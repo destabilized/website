@@ -57,6 +57,7 @@ if __name__ == '__main__':
             <video controls muted>
                 <source src="../../../static/vids/junior/10/typing.mp4">
             </video>    
+
             <h6>pretty self-explanatory. it types one of the letters depending on which row / column pins are connected (i don't have the pcb yet). some of the letters may be different because i use colemak, not qwertyy</h6>
             
             
@@ -65,29 +66,46 @@ if __name__ == '__main__':
             <p>i used this to set up some macros that i plan on having for the final project</p>
             
             <p>terminal: </p>
-            <video controls muted>
-                <source src="../../../static/vids/junior/10/terminal.mp4">
+            <video controls>
+                <source src="../../../static/vids/junior/10/opening_terminal.mp4">
             </video>  
 
             <p>git commands: </p>
-            <video controls muted>
-                <source src="../../../static/vids/junior/10/git.mp4">
+            <video controls>
+                <source src="../../../static/vids/junior/10/git_stuff.mp4">
             </video>
             
             <p>shutdown: </p>
-            <video controls muted>
+            <video controls>
                 <source src="../../../static/vids/junior/10/shutdown.mp4">
             </video>   
 
             <p>folder maker: </p>
-            <video controls muted>
-                <source src="../../../static/vids/junior/10/folder_maker.mp4">
+            <video controls>
+                <source src="../../../static/vids/junior/10/foldermaker.mp4">
             </video>   
             <h6>required a custom bash file bc circuitpython doesn't support counter variables (so i couldn't have it increment when i press the button to change the number)</h6>
 
-            <pre><code class="bash">
-                
-            </code></pre>
+            <pre><code class="bash">#!/bin/bash
+
+TARGET_DIR="/home/qt/website/static/img/junior"
+
+# find the highest numbered folder already existing
+# 'ls -v' sorts numerically, 'tail -n 1' gets the last (highest) number
+LAST_NUMBER=$(ls -v "$TARGET_DIR" | grep -E '^[0-9]+$' | tail -n 1)
+
+if [ -z "$LAST_NUMBER" ]; then
+    NEXT_NUMBER=1
+else
+    # increment the highest number found
+    NEXT_NUMBER=$((LAST_NUMBER + 1))
+fi
+
+# create the new folder with the incremented name
+mkdir "$TARGET_DIR/$NEXT_NUMBER"
+
+# optional: open the directory in nemo after creation
+nemo "$TARGET_DIR" & </code></pre>
 
             <p>i still have room for one macro left. hopefully next week i'll figure that out, and have the 3d printer avaliable to start printing my parts. also mr.christy ordered the parts, so i'll have to start milling the pcb soon.</p>
             <div class="navigation">

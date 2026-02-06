@@ -1,5 +1,13 @@
 const posts = [
   {
+    title: "junior week 2/2 - 2/6",
+    date: "feb. 5th, 2026",
+    preview: "waiting on the printer so did some random stuff",
+    img: "../../static/img/junior/20/progress.jpeg",
+    href: "blog-posts/junior/week_20.html",
+    tags: ["keyboard, misc, reflow oven"]
+  },
+  {
     title: "junior week 1/28 - 1/30",
     date: "jan. 29th, 2026",
     preview: "keycap problems",

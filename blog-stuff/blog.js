@@ -1,11 +1,19 @@
 const posts = [
   {
+    title: "junior week 2/25 - 2/27",
+    date: "feb. 26th, 2026",
+    preview: "locked in on the keyboard. gonna make out of aluminum soon omg!!!1",
+    img: "../../static/img/junior/22/full.png",
+    href: "blog-posts/junior/week_22.html",
+    tags: ["keyboard"]
+  },
+  {
     title: "junior week 2/9 - 2/13",
     date: "feb. 12th, 2026",
     preview: "making steno keyboard bc i'm bored and the resin printer sucks",
     img: "../../static/img/junior/21/pcb_fixed.png",
     href: "blog-posts/junior/week_21.html",
-    tags: ["keyboard, steno,"]
+    tags: ["keyboard, sten,"]
   },
   {
     title: "junior week 2/2 - 2/6",

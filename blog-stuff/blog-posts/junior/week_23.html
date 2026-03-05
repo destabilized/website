@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>junior week 23</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="../blog-posts.css">
+</head>
+<body>
+
+<main>
+    <div class="container">
+        <div class="yap">
+            <h1>junior week mar. 5, 2026</h1>
+            <h2>keyboard updates</h2>
+            <p>saw a "friction fit pad" for the wooting 60he v2, so i decided to create something like this as well</p>
+            <p>this worked well with my screwless design, and my previous design wasn't my favorite</p>
+
+            <p>drafted a rough idea and printed it out of pla to test. worked out pretty well</p>
+
+            <img src="../../../static/img/junior/23/pad.jpeg">
+            <h6>the thin grey strip on the side</h6>
+            <video controls muted>
+                <source src="../../../static/vids/junior/23/friction.mov">
+            </video>  
+
+            <p>was a bit thin, so i extended it to be about 5mm thick</p>
+
+            <p>generally, this is made out of silicone. since i don't think we can machine / cut it properly, i'll probably just print it out of tpu which should have a similar effect</p>
+            <p>because of the friction fit pad and some other problems with the old case, i decided to just start from scratch</p>
+
+            <p>i adjusted the pcb plate and did some research on potential materials for it before landing on polycarbonate</p>
+            <p>chose it because it's machineable (idk if we have the right drills and stuff, if not i'll choose something different) and has a "thick" sound profile which is what i want.</p>
+            
+            <p>after that, i decided to download the wooting 60he v2 case, as wooting puts all of their cases online as a 3d model, so i can see what they did.</p>
+
+            <p>the biggest difference was that they slanted it downwards instead of upwards, leading to slightly less material being used and the correct typing angle.</p>
+            <img src="../../../static/img/junior/23/slant.png">
+            <h6>wooting 60 he v2 slant</h6>
+
+            <p>compared to mine, it led to a "incorrect" typing angle and also led to my pcb being slanted to fit in the case. with this new angle, it fixed all of these "issues" (along with fixing the slant in the usb hole)</p>
+            <img src="../../../static/img/junior/23/incorrect_slant.png">
+            <h6>my old slanting mechanism</h6>
+
+            <p>the rest of the keyboard case was pretty much the same, but there was a problem with the usb hole again.</p>
+            <p>the distance between the case and the usb on the kb2040 is 17.5mm, way bigger than the ~2.5mm head for the usb cable.</p>
+            <img src="../../../static/img/junior/23/problems.png">
+            <p>while i could just increase the size of the hole in the case, it looks weird and i don't want to do that.</p>
+            
+            <p>thinking of using a male -> female usb c header and mounting it on the case somehow. i don't see any other way to do this while keeping the "universal" aspect of being able to use any usbc cable.</p>
+            
+            <div class="navigation">
+                <a href="../../blog.html" class="buttons">← back to all blogs </a>
+                <a href="week_22.html" class="buttons"> last week's post →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

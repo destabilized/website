@@ -1,5 +1,13 @@
 const posts = [
   {
+    title: "junior week 3/9 - 3/13",
+    date: "mar. 12th, 2026",
+    preview: "back to keycaps",
+    img: "../../static/img/junior/24/keys.jpeg",
+    href: "blog-posts/junior/week_24.html",
+    tags: ["keyboard"]
+  },
+  {
     title: "junior week 3/2 - 3/6",
     date: "mar. 5th, 2026",
     preview: "redesigning lol",

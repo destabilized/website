@@ -1,5 +1,13 @@
 const posts = [
   {
+    title: "junior week 3/16 - 3/19",
+    date: "mar. 18th, 2026",
+    preview: "waterjetting is fun. someone should buy us a new computer becuase it's fucking windows 7",
+    img: "../../static/img/junior/25/current.jpeg",
+    href: "blog-posts/junior/week_25.html",
+    tags: ["keyboard, shop tasks"]
+  },
+  {
     title: "junior week 3/9 - 3/13",
     date: "mar. 12th, 2026",
     preview: "back to keycaps",

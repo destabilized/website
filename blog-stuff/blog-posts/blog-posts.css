@@ -126,6 +126,61 @@ pre {
   background: var(--accent-color-3);
 }
 
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.slideshow-track {
+  display: flex;
+  transition: transform 0.35s ease;
+  will-change: transform;
+}
+
+.slideshow-track img {
+  min-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.slideshow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border: none;
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+}
+
+.slideshow-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.slideshow-btn.prev {
+  left: 0.5rem;
+}
+
+.slideshow-btn.next {
+  right: 0.5rem;
+}
+
 @media (max-width: 600px) {
   .yap {
     max-width: 450px;

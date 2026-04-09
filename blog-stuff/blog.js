@@ -1,5 +1,13 @@
 const posts = [
   {
+    title: "junior week 3/30 - 4/10",
+    date: "apr. 9th, 2026",
+    preview: "assuming everything works out, i should be done before june... hopefully?",
+    img: "../../static/img/junior/27+28/keyb.webp",
+    href: "blog-posts/junior/week_27+28.html",
+    tags: ["keyboard, shop tasks"]
+  },
+  {
     title: "junior week 3/23 - 3/27",
     date: "mar. 26th, 2026",
     preview: "getting closer and closer",

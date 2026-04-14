@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="../slideshow.js"></script>
     <link rel="stylesheet" href="../blog-posts.css">
 </head>
 <body>
@@ -27,9 +28,15 @@
 
             <h2>test print two</h2>
 
-            <div class="two-imgs">
-                <img src="../../../static/img/soph/11/sensor.jpeg">
-                <img src="../../../static/img/soph/11/print2.jpeg">
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/soph/11/sensor.webp">
+                    <img src="../../../static/img/soph/11/print2.webp">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
             </div>
 
             <p>so i fixed the size issue on my shell, and i’m liking it a lot more.</p>
@@ -40,7 +47,7 @@
             <h2>test print three</h2>
             <p>i decided to downscale the model as i only needed to test the standoff height with the sensor, so i minimized the model as much as possible. additionally, i decreased the distance between the top two standoffs by 0.05mm</p>
             
-            <img src="../../../static/img/soph/11/test.jpeg">
+            <img src="../../../static/img/soph/11/test.webp">
 
             <p>this ended up being perfect. both the distances between the standoffs and the height of the standoffs worked amazingly with the sensor block inside the shell.</p>
             <p>going forward, i need to work on the mouse clicks (both left and right buttons).</p>
@@ -48,10 +55,16 @@
             <h2>mouse buttons</h2>
             <p>so i created a rough model of the mouse buttons, but ended up hating it.</p>
             <p>instead, i found a really nice model consisting of mouse buttons, so going forward, i’m gonna be recreating my shell to fit with the mouse buttons instead of creating my own mouse buttons.</p>
+            
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
 
-            <div class="two-imgs">
-                <img src="../../../static/img/soph/11/old.png">
-                <img src="../../../static/img/soph/11/new.png">
+                <div class="slideshow-track">
+                    <img src="../../../static/img/soph/11/old.webp">
+                    <img src="../../../static/img/soph/11/new.webp">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
             </div>
 
             <h6>left side was my original attempt at mouse buttons. right side are the mouse buttons i’ll be using moving forward from now</h6>

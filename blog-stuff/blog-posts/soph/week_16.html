@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="../slideshow.js"></script>
     <link rel="stylesheet" href="../blog-posts.css">
 </head>
 <body>
@@ -185,17 +186,23 @@ void loop() {
             <p> well, we all didn’t notice this until we started to test the sumobot where we saw that the sumobot only got power when the lever roller switches weren’t pressed down for some reason. despite this, it worked to some degree for some reason (probably using a digital pin on the metromini as ground?)</p>
             <p> after some re-looking on the pcb document, we noticed this problem. however, rather than re-milling a pcb, we decided to just make a new trace for ground. </p>
             
-            <img src="../../../img/soph/16/fixed_ground.jpeg">
+            <img src="../../../static/img/soph/16/fixed_ground.webp">
             <p> with this fixed, we started testing again.</p>
             
             <h2> minor setback</h2>
             <p> one of the main issues that we wanted to address was the lack of turning by the sumobot. while this was a quick fix of changing the delays to allow the backwards(); function to further back up, i accidentally broke one of the two sumobots.</p>
-            
-            <div class="two-imgs">
-                <img src="../../../static/img/soph/16/broken.jpeg">
-                <img src="../../../static/img/soph/16/broken2.jpeg">
-            </div> 
-            
+
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/soph/16/broken.webp">
+                    <img src="../../../static/img/soph/16/broken2.webp">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
+                
+            </div>
             <p>for some reason, i just forgot to react or protect the bot in case it fell of the table, and it ended up falling off the table.</p>
             <p>while this was easily fixed by reprinting the base and re-cutting the acrylic piece, it was a minor setback, and i started testing code on the second sumobot that miles made.</p>
             
@@ -208,7 +215,7 @@ void loop() {
             <p>me and miles spent quite a while debugging possible fixes to this problem, some of which included: - increasing the amount of times moving backwards off the edge - implementing a “bunnyhop” mechanism where it “jumps”, detaching the switches from the edge. - adding a ramp to the sensors so it wouldn’t get caught on the edge.</p>
             <p>while the first two mechanisms didn’t work, miles eventually noticed that due to the “90°” angle with the rollers, it wouldn’t get back up as it was stuck in a perpendicular angle from the edge and the roller. to fix this, he suggested making a ramp to put onto the sensors to prevent it from getting jammed.</p>
             
-            <img src="../../static/img/soph/16/improv.jpeg">
+            <img src="../../../static/img/soph/16/improv.webp">
             <h6>cardboard ramps to prevent jamming on the edge</h6>
             <p>we decided to just use cardboard for a quick fix. combined with some hot glue, this ended up working amazingly.</p>
             
@@ -236,11 +243,11 @@ void loop() {
 </code></pre>
             <p>however, while setting this up in the sumobot i realized that every time the sumobot was run, the same values were showing up.</p>
             
-            <img src="../../../static/img/soph/16/turning_problems.jpeg">
+            <img src="../../../static/img/soph/16/turning_problems.webp">
             <h6>startL indicates that it has been rerun, and you can see that the same values show up.</h6>
             <p>this was because i had the seed where the random numbers would come from in the setup, where it would only change if it was re-uploaded. to fix this, i moved it to when the button gets pressed, which led to randomness every time like i wanted.</p>
             
-            <img src="../../../static/img/soph/16/turning_fix.jpeg">
+            <img src="../../../static/img/soph/16/turning_fix.webp">
             <h6> different numbers... wow!</h6>
             <p>with all of this, i believe our sumobot is done. potentially gotta fix the problems where it gets stuck for a bit (if possible), but that’s all.</p>
             

@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="../slideshow.js"></script>
     <link rel="stylesheet" href="../blog-posts.css">
 </head>
 <body>
@@ -23,39 +24,58 @@
             <p>wasn't hard, just tedious. however, i think i did a way better job with the wiring as there isn't as many via's as the first edition</p>
             <p>this won't change anything, but it will make wiring it slightly harder because it's not on the same row it's supposed to be on</p>
 
-            <img src="../../../static/img/junior/14/wired.png">
+            <img src="../../../static/img/junior/14/wired.webp">
             <h6>the new wiring (if you can see)</h6>
 
-            <img src="../../../static/img/junior/14/improved.png">
+            <img src="../../../static/img/junior/14/improved.webp">
             <h6>zoomed in on microcontroller area. way less via's</h6>
 
-            <img src="../../../static/img/junior/13/sobs.png">
+            <img src="../../../static/img/junior/13/sobs.webp">
             <h6>last week's for comparison</h6>
 
-            <img src="../../../static/img/junior/14/front.png"> <img src="../../../static/img/junior/14/back.png">
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/junior/14/front.webp" alt="">
+                    <img src="../../../static/img/junior/14/back.webp" alt="">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
+            </div>
             <h6>the keys with stabilizers were set to bottom to line up correctly with the other keys. i was too lazy to adjust the footprint</h6>
 
             <p>with this all done, the pcb should be ready to be shipped out. just in case, i created a very complex pcb to be cut in cardboard to test stabilizers positioning</p>
-            <img src="../../../static/img/junior/14/stab_test.png"> <img src="../../../static/img/junior/14/stab_test_2.png">
+            
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/junior/14/stab_test.webp" alt="">
+                    <img src="../../../static/img/junior/14/stab_test_2.webp" alt="">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
+            </div>
 
             <p>hopefully the stabilizers arrive soon so i can test if the footprint that i stole from online works.</p>
 
             <h2>keycaps</h2>
             <p>so i forgot to create a tab key, so i accidently printed all the keys besides tab to test tolerances</p>
 
-            <img src="../../../static/img/junior/14/tab.png">
+            <img src="../../../static/img/junior/14/tab.webp">
             <h6>tab key</h6>
             
             <p>i guess the orientation i printed it in wasn't ideal, as the tolerances came out really poorly and it wouldn't fit into the keys.</p>
 
             <p>since i was also testing the look of the keycaps, i decided to just use heat to open up the cross and placed them to check.</p>
 
-            <img src="../../../static/img/junior/14/keys.jpg">
+            <img src="../../../static/img/junior/14/keys.webp">
 
             <p>turned out pretty well (minus the space bar which got totally destroyed when heating it up) and i was quite satisified with the look. i edited the tolerances and reprinted just one key a few times before getting the tolerances correct.</p>
             <p>since i plan on the final keycaps being made in resin, i decided to resin print the r2 1x1 keycap just to see how it would feel in resin, and to check if the tolerances for the resin printer were similiar to the 3d printer.</p>
 
-            <img src="../../../static/img/junior/14/preform.png">
+            <img src="../../../static/img/junior/14/preform.webp">
             <p>it's not gonna be done today as it still needs to be washed and everything. however, i'm looking forward to seeing how my first ever resin print comes out.</p>
             
             <div class="navigation">
@@ -65,7 +85,6 @@
         </div>
     </div>
 </main>
-
 
 </body>
 </html>

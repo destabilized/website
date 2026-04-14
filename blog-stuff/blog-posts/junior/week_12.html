@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="../slideshow.js"></script>
     <link rel="stylesheet" href="../blog-posts.css">
 </head>
 <body>
@@ -20,17 +21,17 @@
             <h2>diodes</h2>
             <p>started by soldering the diodes. <a target="_blank" rel="noopener noreferrer" href="https://www.mileshilliard.com/">miles</a> showed me how to use solder paste and the air gun to solder the diodes due to their size.</p>
             <p>furthermore, i decided to use my first pcb (the broken board) as aa way to practice my soldering. since i had a bunch of extra diodes, i soldered them all on the broken board and probed them to ensure they were working</p>
-            <img src="../../../static/img/junior/12/test-board.jpeg">
+            <img src="../../../static/img/junior/12/test-board.webp">
             <h6>only shorted one of the diodes</h6>
 
            
             <p>with this done, i started to solder them onto the main board</p>
-            <img src="../../../static/img/junior/12/diodes.jpeg">
+            <img src="../../../static/img/junior/12/diodes.webp">
 
             <h2>encoder</h2>
             <p>after finishing the diodes, i decided to solder the encoder next. however, i ran into a problem when doing so.</p>
             <p>i accidently soldered it backwards (it should be on the side opposite to the kb2040)</p>
-            <img src="../../../static/img/junior/12/accident.jpeg">
+            <img src="../../../static/img/junior/12/accident.webp">
 
             <p>yet again, <a target="_blank" rel="noopener noreferrer" href="https://www.mileshilliard.com/">miles</a> saved me by showing me how to use solder wick to remove the solder, and resoldered it.</p>
             
@@ -42,12 +43,22 @@
 
             <p>however, on the final one, i accidently pulled the pad on the pcb, causing me to be unable to solder the final switch properly.</p>
             <p><a target="_blank" rel="noopener noreferrer" href="https://timmy.greenlifestylelabs.com/">tim</a> figured out some solution, and fixed my board.</p>
-            <img src="../../../static/img/junior/12/full-front.jpeg"> <img src="../../../static/img/junior/12/full-back.jpeg">
+            
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/junior/12/full-front.webp" alt="">
+                    <img src="../../../static/img/junior/12/full-back.webp" alt="">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
+            </div>
 
             <h6>front and back of the double sided pcb. my first one</h6>
 
             <h2>while i was soldering, i also started printing the r1 1x1 keycaps which i would be using</h2>
-            <img src="../../../static/img/junior/12/keycap.jpeg">
+            <img src="../../../static/img/junior/12/keycap.webp">
 
             <p>i tried two orientations. one at an angle, and the other where it was printed on the top. i ended up printing it on an angle, as it didn't ruin the surface of the keycap and taking out the small support wasn't too hard.</p>
             
@@ -57,7 +68,7 @@
             <p>me and <a target="_blank" rel="noopener noreferrer" href="https://www.mileshilliard.com/">miles</a> decided to just have the pcb made professionally, but wait until i started the keyboard's pcb so we could get them both at once (and pay less for shipping). </p>
             <p>mr. christy was fine with this, but said i should try and recreate it on a breadboard to ensure that my pcb is correct.</p>
 
-            <img src="../../../static/img/junior/12/breadboard.jpeg">
+            <img src="../../../static/img/junior/12/breadboard.webp">
             <h6>my amazing recreation</h6>
 
             <p>the switches ended up working, but the rotary encoder wasn't working for some reason. i'm going to have to figure out what's wrong, and adjust my pcb if it's a wiring issue with the encoder.</p>

@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="../slideshow.js"></script>
     <link rel="stylesheet" href="../blog-posts.css">
 </head>
 <body>
@@ -23,27 +24,33 @@
             <h2>3d model of the pcb</h2>
             <p>i began by creating a basic 3d model of the pcb to serve as the foundation for the shell and other components. in the image below, i’ve only modeled the left and right mouse buttons, along with the parts needed for the scroll wheel.</p>
 
-            <img src="../../../static/img/soph/7/pcb.png">
+            <img src="../../../static/img/soph/7/pcb.webp">
             <h6> just the basic shape so i know the dimensions.</h6>
             <p> after this, i could start working on the shell.</p>
 
             <h2> shell</h2>
-            <div class="two-imgs">
-                <img src="../../../static/img/soph/7/front.png">
-                <img src="../../../static/img/soph/7/back.png">
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/soph/7/front.webp">
+                    <img src="../../../static/img/soph/7/back.webp">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
             </div>
 
             <p>this is the initial shell design, modeled after the zerømouse. i still need to add the “wings” to the shell, as there’s currently no place to rest your fingers comfortably.</p>
 
             <h2>3d printed shell</h2>
-            <img src="../../../static/img/soph/7/3d.jpeg">
+            <img src="../../../static/img/soph/7/3d.webp">
 
             <p>this was just a test print, so it’s not a huge deal, but there were some issues.</p>
             <p>i printed this on the fusion3, and for some reason, it randomly filled in one side where it wasn’t supposed to.</p>
             <p>additionally, i noticed that the sensor area only had one layer, which i’ll need to fix by adjusting the shell thickness. i think that’s the reason behind the problem.</p>
             <p>the stands for the pcb mounting holes are also misaligned. this is mostly because i’m not great at using calipers for precise measurements. i’ll need to tweak the hole sizes and reduce the diameter of the cylinders, as they don’t fit into the pcb holes properly. </p>
 
-            <img src="../../../static/img/soph/7/together.jpeg">
+            <img src="../../../static/img/soph/7/together.webp">
 
             <div class="navigation">
                 <a href="../../blog.html" class="buttons">← back to all blogs </a>

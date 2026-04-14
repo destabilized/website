@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="../slideshow.js"></script>
     <link rel="stylesheet" href="../blog-posts.css">
 </head>
 <body>
@@ -15,33 +16,43 @@
     <div class="container">
         <div class="yap">
             <h1>junior week mar. 12, 2026</h1>
+            
             <h2>keyboard updates</h2>
             <p>fixed some errors before printing everything</p>
             <p>first problem was the friction fit pad and the pcb plate colliding</p>
 
-            <img src="../../../static/img/junior/24/problem.png">
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/junior/24/problem.webp">
+                    <img src="../../../static/img/junior/24/fixed.webp">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
+            </div>
             <p>because of this, i decreased the size of the pcb plate by a little</p>
             
-            <img src="../../../static/img/junior/24/fixed.png">
-
             <p>the next problem was collision between the case and the friction fit pad, creating a fit that wouldn't allow the usb cable to go all the way in</p>
-            <img src="../../../static/img/junior/24/problem2.png">
+            <img src="../../../static/img/junior/24/problem2.webp">
             <p>fixing this was a bit annoying because i tried using part the design for the first time, so i had to keep jumping back and forth to create the hole in the friction fit pad</p>
             <p>eventually got it fixed though.</p>
 
-            <img src="../../../static/img/junior/24/fixed2.png">
+            <img src="../../../static/img/junior/24/fixed2.webp">
+            
             <p>with all of this fixed, i started printing the case (forgot to take a photo)</p>
             <p>worked out fine. can't really test the case without the friction fit pad, which needed to be printed with tpu + was way too big for the 3d printers, so i'll have to figure out a workaround for this</p>
 
             <p>i also did another testcut with the new pcb plate, and the lasercutter kinda didn't cut through.</p>
-            <img src="../../../static/img/junior/24/plate.jpeg">
+            <img src="../../../static/img/junior/24/plate.webp">
             <p>slightly annoying, but i just cut the rest of the holes (destroying it slightly in the process) and then tested the fit. worked out well</p>
+            
             <p>i then started working on keycaps again, and after a lot of time thinking, i decided to just have the r2 + r1 keycaps be the exact same as the r3 keycaps.</p>
-            <img src="../../../static/img/junior/24/keys.jpeg">
+            <img src="../../../static/img/junior/24/keys.webp">
             
             <p>i also tried printing the keycaps in a different orientation, as last time the keys were printed on the top to ensure the tolerance woudl fit, but would create a terrible finish on the top due to leaving holes from the supports</p>
             
-            <img src="../../../static/img/junior/24/test.png">
+            <img src="../../../static/img/junior/24/test.webp">
             <p>manually added some more support on the hole area. hoping it works out instead so i don't have to sand and stuff</p>
 
             <p>however, i do have a bunch that are messed up with holes and stuff, so i grabbed a brush and started "painting" a layer over the top with the resin. they're currently curing, so hopefully they turn out right.</p>
@@ -49,8 +60,17 @@
             <p>i also tried to figure out the problem with the spacebar.</p>
             <p>i have two spacebars (both from the same model) yet they have different problems.</p>
 
-            <img src="../../../static/img/junior/24/space1.jpeg">
-            <img src="../../../static/img/junior/24/space2.jpeg">
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/junior/24/space1.webp" alt="">
+                    <img src="../../../static/img/junior/24/space2.webp" alt="">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
+            </div>
+            
             <p>in the first image, the spacebar lifts on the left side. in the second image, the spacebar lifts on the right side.</p>
             <p>this creates a problem where typing on the opposide side / middle of the spacebar will lift it up, rendering it unusable.</p>
 

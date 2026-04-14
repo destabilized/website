@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="../slideshow.js"></script>
     <link rel="stylesheet" href="../blog-posts.css">
 </head>
 <body>
@@ -21,14 +22,20 @@
             <h2> grip (wings)</h2>
             <p>finally added the “wings” i mentioned last week. </p>
             
-            <img src="../../../static/img/soph/13/full_3d.png">
+            <img src="../../../static/img/soph/13/full_3d.webp">
             <p>this completes the mouse shell design. still need to figure out trigger attachment (more below), though resin printing might make that unnecessary. my initial attachment idea didn’t work well.</p>
             
             <h2> printed parts</h2>
 
-            <div class="two-imgs">
-                <img src="../../../static/img/soph/13/full.jpeg">
-                <img src="../../../static/img/soph/13/triggers.jpeg">
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/soph/13/full.webp">
+                    <img src="../../../static/img/soph/13/triggers.webp">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
             </div>
             
             <p>tried using small stands and pegs to attach the triggers, but they were too thin (.95mm) and fragile - broke with slight pressure. the holes also came out weird.</p>
@@ -37,16 +44,22 @@
             <h2> trigger problems</h2>
             <p> i couldn't just extrude the face to increase the thickness due to the upward angle of the triggers.</p>
             
-            <img src="../../../static/img/soph/13/problem.png">
+            <img src="../../../static/img/soph/13/problem.webp">
 
             <h6>notice how as the trigger starts angling upwards, a gap forms</h6>
             <p>this was a major problem that i wasn’t originally sure how to solve, as i wasn’t able to print like this, but didn’t know what the problem was.</p>
             <p>eventually with mr.l’s help, i got the trigger’s thickness to increase: utilized an offset plane and projecting both the face and the intercept and connecting the two faces, extruding them to each other.</p>
             <p>now the triggers (should) work, just need to add pegs/holes for attachment.</p>
             
-            <div class="two-imgs">
-                <img src="../../../static/img/soph/13/fixedv1.png">
-                <img src="../../../static/img/soph/13/fixedv2.png">
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/soph/13/fixedv1.webp">
+                    <img src="../../../static/img/soph/13/fixedv2.webp">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
             </div>
             
             <h2>other problems</h2>

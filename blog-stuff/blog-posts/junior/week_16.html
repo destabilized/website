@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="../slideshow.js"></script>
     <link rel="stylesheet" href="../blog-posts.css">
 </head>
 <body>
@@ -20,13 +21,13 @@
 
             <h2>pre-break work</h2>
             <p>got some work on the case done, and also got some help from <a target="_blank" rel="noopener noreferrer" href="https://timmy.greenlifestylelabs.com/">tim</a> with designing the case. </p>
-            <img src="../../../static/img/junior/16/case.png">
+            <img src="../../../static/img/junior/16/case.webp">
             <h6>probably not the final design, still a wip</h6>
 
             <p>while i deviated away from the silicone bowl design, <a target="_blank" rel="noopener noreferrer" href="https://timmy.greenlifestylelabs.com/">tim</a> thought of a design which uses leaf springs and the top plate to secure the pcb.</p>
             
             <p>also, to mount the top and bottom cases together, i'll use m3 screw.</p>
-            <img src="../../../static/img/junior/16/screw.png">
+            <img src="../../../static/img/junior/16/screw.webp">
             <h6>still need to make the hole go through the top case. i'll be working on that soon</h6>
 
             <p>in addition, due to the length of the screw being imperfect, and needing two different screws, i decided to use a 22mm screw, and just machine it down to size (20mm and 16mm)</p>
@@ -81,7 +82,7 @@ if __name__ == "__main__":
 
             <h2>pcbs arriving</h2>
             <p>while working on improvements to the case design with <a target="_blank" rel="noopener noreferrer" href="https://timmy.greenlifestylelabs.com/">tim</a>, the pcb's finally arrived</p>
-            <img src="../../../static/img/junior/16/pcbs.jpeg"> 
+            <img src="../../../static/img/junior/16/pcbs.webp"> 
             <h6>pcbs for both the macropad and the keyboard</h6>
             
             <p>so i decided to finish case design later, and started unsoldering the macropad for the components</p>
@@ -91,24 +92,33 @@ if __name__ == "__main__":
             <h2>pcb</h2>
             <p>encountered two problems early on.</p>
             <p>since i'm still inexperienced with designing pcb's, especially smd boards, i ended up putting two switches in the location where the kb2040 was, and a diode.</p>
-            <img src="../../../static/img/junior/16/closeup.jpeg"> 
+            <img src="../../../static/img/junior/16/closeup.webp"> 
             <h6>you can see the little legs of the switch standing out</h6>
 
             <p>the switches weren't a huge problem, as i could cut down the plastic legs and hope solder was strong enough to hold the swithches in place, which it was</p>
-            <img src="../../../static/img/junior/16/solution.jpeg"> 
+            <img src="../../../static/img/junior/16/solution.webp"> 
 
             <p>however, i still had to deal with the diode. i contemplated about using a thin wire to wire the diode in a different direction, but ended up just not soldering a diode for the escape key, thinking that there's no shortcuts so a diode wouldn't be needed.</p>
             <p>with that in mind, i decided to solder the kb2040, which ended up being flush, just how i wanted.</p>
-            <img src="../../../static/img/junior/16/solder1.jpeg"> 
+            <img src="../../../static/img/junior/16/solder1.webp"> 
 
             <p>with that done, i started soldering the sod123 diodes.</p>
             <p>using solder paste and the hot air gun, i took quite a while soldering them, then had to test them all with a multimeter to check if they worked.</p>
             <p>thankfully, there were no errors, and i cleaned some of the excess solder on the board.</p>            
-            <img src="../../../static/img/junior/16/diodes.jpeg">
+            <img src="../../../static/img/junior/16/diodes.webp">
 
             <p>only thing left was the switches, which was way easier to solder than the diodes. </p>
-            <img src="../../../static/img/junior/16/full-back.jpeg"> 
-            <img src="../../../static/img/junior/16/full.jpeg"> 
+            
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/junior/16/full-back.webp" alt="">
+                    <img src="../../../static/img/junior/16/full.webp" alt="">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
+            </div>
 
             <h2>testing</h2>
             <p>transferring over my code from the kb2040 i was using for testing onto the kb2040 on the keyboard, it worked out perfectly... except for one issue.</p>
@@ -133,7 +143,6 @@ if __name__ == "__main__":
         </div>
     </div>
 </main>
-
 
 </body>
 </html>

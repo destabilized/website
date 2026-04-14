@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sophomore week 18</title>
     <link rel="stylesheet" href="../blog-posts.css">
+    <script src="../slideshow.js"></script>
 </head>
 <body>
 
@@ -18,34 +19,48 @@
 
             <h2> trigger </h2>
             <p>so, as you can recall from my blog post, the dimensions were a bit off.</p>
-            <img src="../../../static/img/soph/18/left_old.PNG">
+            <img src="../../../static/img/soph/18/left_old.webp">
             <p>fixing this issue fixed my problem, and i decided to try a new mechanism to attach the pcb to the stands.</p>
 
             <p>first, i wanted to test the print to make sure that my idea could be printed without supports.</p>
-            <img src="../../../static/img/soph/18/broken.jpeg">
+            <img src="../../../static/img/soph/18/broken.webp">
             <p>while printing, someone told me that my print for some reason got evicted off of the build plate, and stopped printing halfway.</p>
             <p>so, some friends suggested that i use brim, and after some supervision, it turned out quite well.</p>
 
-            <div class="two-imgs">
-                <img src="../../../static/img/soph/18/new1.jpeg">
-                <img src="../../../static/img/soph/18/new2.jpeg">
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/soph/18/new1.webp">
+                    <img src="../../../static/img/soph/18/new2.webp">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
+                
             </div>
 
             <h2> new idea </h2>
             <p>rather than making a massive shell, i wanted to try a new approach and extend the bottom of the triggers to try and avoid making a huge shell.</p>
-            <img src="../../../static/img/soph/18/idea.jpg">
+            <img src="../../../static/img/soph/18/idea.webp">
             <h6>this is from optimum’s new zeromouse blade, i kinda wanna do something like this</h6>
             <p>however, i will still have to create some sort of base for the sensor (as this is a cheap mouse).</p>
 
             <p>in the end, the mouse looked like this: </p>
-            <img src="../../../static/img/soph/18/LEFT.PNG">
+            <img src="../../../static/img/soph/18/LEFT.webp">
             <p>however, printing this will be a problem, as there will be overhang that i probably cannot avoid.</p>
             <p>now that the left trigger was done, a simple mirror would allow me to finish the right trigger right?</p>
             <p>well, the pcb is weird, and the hole on each side is different, so i had to edit the bottom part of the right side a bit.</p>
 
-            <div class="two-imgs">
-                <img src="../../../static/img/soph/18/right_problems.PNG">
-                <img src="../../../static/img/soph/18/fixed_right.PNG">
+            <div class="slideshow">
+                <button class="slideshow-btn prev" type="button">‹</button>
+
+                <div class="slideshow-track">
+                    <img src="../../../static/img/soph/18/right_problems.webp">
+                    <img src="../../../static/img/soph/18/fixed_right.webp">
+                </div>
+
+                <button class="slideshow-btn next" type="button">›</button>
+                
             </div>
 
             <p>now that my triggers are done, i can start extending and making the “shell” for the mouse. additionally, i still need to figure out a minimalistic way to add the sensor holder and a way to print the mouse.</p>

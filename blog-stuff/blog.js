@@ -1,4 +1,12 @@
 const posts = [
+    {
+    title: "junior week 3/30 - 4/10",
+    date: "apr. 16th, 2026",
+    preview: "website changes eventually bc i don't like my current website. ",
+    img: "../../static/img/junior/29/blogs_dark.webp",
+    href: "blog-posts/junior/week_29.html",
+    tags: ["keyboard, website, html/css"]
+  },
   {
     title: "junior week 3/30 - 4/10",
     date: "apr. 9th, 2026",
